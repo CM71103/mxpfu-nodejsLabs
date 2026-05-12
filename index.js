@@ -8,5 +8,8 @@ const PORT = 5000;
 app.use(express.json());
 app.use("/user", routes);
 
+// here what ever requests that start with /user will be sent \
+// to the routes router 
+
 // Start the server and log a message when it's running
 app.listen(PORT, () => console.log("Server is running at port " + PORT));
